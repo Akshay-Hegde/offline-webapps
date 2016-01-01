@@ -22,10 +22,23 @@ Fortunately almost all browsers implements this feature.
 
 ### `navigator.onLine` property
 
+As specified in specs, the `navigator.onLine` attribute must return false if the user agent will not contact the network when the user follows links or when a script requests a remote page (or knows that such an attempt would fail), and must return true otherwise.
 
+This sounds good, but as always, it's a bit different in reality. Some browsers implemented this feature differently - on Chrome and Safari this property will return `false` if user can't connect on the network, in Firefox and Internet Explorer switching browser to an offline more will return `false`.
 
 ### `online` and `offline` events
 
+Usage:
+
+```
+// Add an event listener on window, document or body
+window.addEventListener('offline, e => console.log('offline'))
+window.addEventListener('online', e => console.log('online'))
+
+// Or by using .ononline and .onoffline on document or body
+document.body.ononline = () => console.log('online')
+document.body.onoffline = () => console.log('offline')
+```
 
 ### Demo
 
