@@ -24,8 +24,8 @@ function handleEvent() {
   document.getElementById('events-list').appendChild(li);
 }
 
-window.addEventListener('online', handleEvent);
-window.addEventListener('offline', handleEvent);
+window.addEventListener('online', handleEvent, false);
+window.addEventListener('offline', handleEvent, false);
 
 updateOnlineIndicator();
 

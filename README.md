@@ -26,6 +26,19 @@ As specified in specs, the `navigator.onLine` attribute must return false if the
 
 This sounds good, but as always, it's a bit different in reality. Some browsers implemented this feature differently - on Chrome and Safari this property will return `false` if user can't connect on the network, in Firefox and Internet Explorer switching browser to an offline more will return `false`.
 
+Usage:
+
+```
+// From a browser
+window.navigator.onLine // true or false
+
+// From a worker
+self.navigator.onLine // true or false
+
+// Or simply
+navigator.onLine // true or false
+```
+
 ### `online` and `offline` events
 
 Usage:
@@ -38,7 +51,16 @@ window.addEventListener('online', e => console.log('online'))
 // Or by using .ononline and .onoffline on document or body
 document.body.ononline = () => console.log('online')
 document.body.onoffline = () => console.log('offline')
+
+// From a worker
+self.addEventListener('offline', e => self.postMessage('offline'), false)
+self.addEventListener('online', e => self.postMessage('online'), false)
 ```
+
+### Tricky parts
+
+1. It seems that the events are not triggered in the worker on Chrome (tested on Mac on versions 47 and Chrome Canary v49). Events works fine on Safari and Firefox.
+2. `.ononline` and `.onoffline` properties can't be used on `window`, from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document/ononline): "**Note:** using `window.ononline` or `window.onoffline` will not work for compatibility reasons."
 
 ### Demo
 
