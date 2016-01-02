@@ -45,7 +45,7 @@ Usage:
 
 ```js
 // Add an event listener on window, document or body
-window.addEventListener('offline, e => console.log('offline'))
+window.addEventListener('offline', e => console.log('offline'))
 window.addEventListener('online', e => console.log('online'))
 
 // Or by using .ononline and .onoffline on document or body
