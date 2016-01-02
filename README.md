@@ -43,7 +43,7 @@ navigator.onLine // true or false
 
 Usage:
 
-```
+```js
 // Add an event listener on window, document or body
 window.addEventListener('offline, e => console.log('offline'))
 window.addEventListener('online', e => console.log('online'))
