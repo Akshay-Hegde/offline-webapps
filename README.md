@@ -41,6 +41,14 @@ navigator.onLine // true or false
 
 ### `online` and `offline` events
 
+Whenever online status is changed online or offline event is fired on body of each page and it bubbles up to document and finally window. Both of those events are not cancelable.
+
+There's 3 ways of registering listeners for those events:
+
+1. By adding an event listener on body, document or window (or self in case of a web worker);
+2. By setting `.ononline` and `.onoffline` properties on document or body;
+3. By defining `ononline=""`and `onoffline=""` attribute in `<body>` tag.
+
 Usage:
 
 ```js
@@ -64,6 +72,7 @@ self.addEventListener('online', e => self.postMessage('online'), false)
 3. In Firefox, prior to version 41 `navigator.onLine` property returned `false` only if you are in an offline mode, and from version 41 on OS X and Windows, the value should follow the actual network connectivity.
 4. As noted in specs, this attribute is inherently unreliable. A computer can be connected to a network without having Internet access. Most of the browsers just checks if the device is connected to any network, not if it is able to access the internet.
 5. Offline event is not triggered when you use Chrome Dev tools' Network throttling to simulate an offline mode.
+6. `self.ononline` and `self.onoffline` seems to be working only on Safari on Mac.
 
 ### Demo
 
@@ -76,6 +85,8 @@ Source: [caniuse.com](http://caniuse.com/#feat=online-status); Date: 2015/12/26.
 ### More info
 
 - [HTML Specs](https://html.spec.whatwg.org/multipage/browsers.html#browser-state)
+- [MDN: Online and offline events](https://developer.mozilla.org/en/docs/Online_and_offline_events)
+- [HTML5 Demos](http://html5demos.com/offline)
 
 [[Back to top]](#offline-webapps)
 
