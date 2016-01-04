@@ -84,7 +84,7 @@ Source: [caniuse.com](http://caniuse.com/#feat=online-status); Date: 2015/12/26.
 
 ### More info
 
-- [HTML Specs](https://html.spec.whatwg.org/multipage/browsers.html#browser-state)
+- [Specs](https://html.spec.whatwg.org/multipage/browsers.html#browser-state)
 - [MDN: Online and offline events](https://developer.mozilla.org/en/docs/Online_and_offline_events)
 - [HTML5 Demos](http://html5demos.com/offline)
 
@@ -97,6 +97,11 @@ Source: [caniuse.com](http://caniuse.com/#feat=online-status); Date: 2015/12/26.
 ![](assets/browser-support/application-cache.png)
 Source: [caniuse.com](http://caniuse.com/#feat=offline-apps); Date: 2015/12/26.
 
+### More info
+
+- [Specs](http://www.w3.org/TR/2011/WD-html5-20110525/offline.html)
+- [Appcache Facts](http://appcache.offline.technology)
+
 [[Back to top]](#offline-webapps)
 
 ## Service workers
@@ -105,6 +110,10 @@ Source: [caniuse.com](http://caniuse.com/#feat=offline-apps); Date: 2015/12/26.
 
 ![](assets/browser-support/service-workers.png)
 Source: [caniuse.com](http://caniuse.com/#feat=serviceworkers); Date: 2015/12/26.
+
+### More info
+
+- [Specs](http://www.w3.org/TR/service-workers/)
 
 [[Back to top]](#offline-webapps)
 
@@ -118,6 +127,10 @@ Source: [caniuse.com](http://caniuse.com/#feat=serviceworkers); Date: 2015/12/26
 ![](assets/browser-support/localstorage.png)
 Source: [caniuse.com](http://caniuse.com/#feat=namevalue-storage); Date: 2015/12/26.
 
+### More info
+
+- [Specs](http://www.w3.org/TR/webstorage/)
+
 [[Back to top]](#offline-webapps)
 
 ## WebSQL
@@ -127,6 +140,10 @@ Source: [caniuse.com](http://caniuse.com/#feat=namevalue-storage); Date: 2015/12
 ![](assets/browser-support/websql.png)
 Source: [caniuse.com](http://caniuse.com/#feat=sql-storage); Date: 2015/12/26.
 
+### More info
+
+- [Specs](http://www.w3.org/TR/webdatabase/)
+
 [[Back to top]](#offline-webapps)
 
 ## IndexedDB
@@ -135,5 +152,9 @@ Source: [caniuse.com](http://caniuse.com/#feat=sql-storage); Date: 2015/12/26.
 
 ![](assets/browser-support/indexeddb.png)
 Source: [caniuse.com](http://caniuse.com/#feat=indexeddb); Date: 2015/12/26.
+
+### More info
+
+- [Specs](http://www.w3.org/TR/IndexedDB/)
 
 [[Back to top]](#offline-webapps)
