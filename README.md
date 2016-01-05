@@ -94,6 +94,17 @@ Source: [caniuse.com](http://caniuse.com/#feat=online-status); Date: 2015/12/26.
 ## Application cache
 [![Deprecated](https://img.shields.io/badge/Specs-DEPRECATED-red.svg?style=flat-square)](https://html.spec.whatwg.org/multipage/browsers.html#offline)
 
+Beside online status, HTML5 introduced another, much more useful, resource for the real offline web apps - Application cache.
+
+Application Cache (AppCache) provides an interface to specify resources that browser should cache an make available in an offline mode, even if user refreshes the page. Beside all pitfalls and tricky parys, there's a few clear benefits that AppCache brought:
+
+1. **Offline browsing** - finally web apps become fully available without an internet connection
+2. **Speed** - cached resources are local, and therefore load faster
+3. **Reduced server load** - the browser only downloads changed or non-cached resources from the server
+
+AppCache is deprecated in favor of a new and more powerful [Service Workers](#service-workers), but until Service Workers gain better browser support you'll still need AppCache for cross-browser offline web apps.
+
+
 ### Browser support
 
 ![](assets/browser-support/application-cache.png)
