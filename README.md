@@ -16,6 +16,7 @@ This document should cover basic of how to write offline web applications.
 ## Intro
 
 ## Online/Offline status
+[![Living standard](https://img.shields.io/badge/Specs-LS-brightgreen.svg?style=flat-square)](https://html.spec.whatwg.org/multipage/browsers.html#browser-state)
 
 Before we dive deep into offline web application, you would probably like to know if user is online and to receive an event when that status is changed.  
 Fortunately almost all browsers implements this feature.
@@ -91,6 +92,7 @@ Source: [caniuse.com](http://caniuse.com/#feat=online-status); Date: 2015/12/26.
 [[Back to top]](#offline-webapps)
 
 ## Application cache
+[![Deprecated](https://img.shields.io/badge/Specs-DEPRECATED-red.svg?style=flat-square)](https://html.spec.whatwg.org/multipage/browsers.html#offline)
 
 ### Browser support
 
@@ -99,12 +101,13 @@ Source: [caniuse.com](http://caniuse.com/#feat=offline-apps); Date: 2015/12/26.
 
 ### More info
 
-- [Specs](http://www.w3.org/TR/2011/WD-html5-20110525/offline.html)
+- [Specs](https://html.spec.whatwg.org/multipage/browsers.html#offline)
 - [Appcache Facts](http://appcache.offline.technology)
 
 [[Back to top]](#offline-webapps)
 
 ## Service workers
+[![Working draft](https://img.shields.io/badge/Specs-WD-yellow.svg?style=flat-square)](http://www.w3.org/TR/service-workers/)
 
 ### Browser support
 
@@ -121,6 +124,7 @@ Source: [caniuse.com](http://caniuse.com/#feat=serviceworkers); Date: 2015/12/26
 
 
 ## localStorage
+[![Recommendation](https://img.shields.io/badge/Specs-REC-green.svg?style=flat-square)](http://www.w3.org/TR/webstorage/)
 
 ### Browser support
 
@@ -134,6 +138,7 @@ Source: [caniuse.com](http://caniuse.com/#feat=namevalue-storage); Date: 2015/12
 [[Back to top]](#offline-webapps)
 
 ## WebSQL
+[![Deprecated](https://img.shields.io/badge/Specs-DEPRECATED-red.svg?style=flat-square)](http://www.w3.org/TR/webdatabase/)
 
 ### Browser support
 
@@ -147,6 +152,7 @@ Source: [caniuse.com](http://caniuse.com/#feat=sql-storage); Date: 2015/12/26.
 [[Back to top]](#offline-webapps)
 
 ## IndexedDB
+[![Recommendation](https://img.shields.io/badge/Specs-REC-green.svg?style=flat-square)](http://www.w3.org/TR/IndexedDB/)
 
 ### Browser support
 
