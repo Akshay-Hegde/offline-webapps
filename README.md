@@ -117,9 +117,43 @@ Manifest file can have any extension as long as it is served with a correct mime
 <!-- Or an absolute url with the same origin -->
 <html manifest="https://example.com/example.appcache">
 
-<!-- And any extension is supported if the file is served with the correct mimetype -->
+<!-- And any extension is supported if the file is served with the correct mime-type -->
 <html manifest="example.cache">
 ``` 
+
+Manifest file itself is a very simple textual file that can have three sections - cache, network and fallback - and it looks like this:
+
+```
+CACHE MANIFEST
+# v1 2016-01-10
+# Line above is just a simple comment, but it is a good practice to version your manifest file, see explanation bellow
+example.html
+styles.css
+img/someimage.png
+
+# Section that always requires an internet access and that will not be available offline
+NETWORK:
+/api
+
+# Fallback content that will be served to the offline users
+FALLBACK:
+/some-url offline.html
+```
+
+**CACHE MANIFEST Section: **  
+TBA
+
+**NETWORK Section: **  
+TBA
+
+**FALLBACK Section: **  
+TBA
+
+**Comments: **  
+TBA
+
+
+
 
 ### Browser support
 
