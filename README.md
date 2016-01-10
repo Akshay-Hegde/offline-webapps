@@ -123,7 +123,7 @@ Manifest file can have any extension as long as it is served with a correct mime
 
 Manifest file itself is a very simple textual file that can have three sections - cache, network and fallback - and it looks like this:
 
-```
+```yaml
 CACHE MANIFEST
 # v1 2016-01-10
 # Line above is just a simple comment,
@@ -142,14 +142,17 @@ FALLBACK:
 /some-url offline.html
 ```
 
-**CACHE MANIFEST Section:**  
-TBA
+**CACHE Section:**  
+This is the default section. All files listed in this section (on the beggining of the file or immediatelly bellow "CACHE MANIFEST" title) will be cached as soon as they are downloaded for the first time. Those files will be served from cache until both cache manifest and the file are not updated.
 
 **NETWORK Section:**  
-TBA
+Files listed in this section may come from the internet if they are not cached. If the file isn't cached in the CACHE section and isn't listed in this section it'll not be loaded even if user is online.  
+You can specify separate files or `*` in this section. For the most of the websites `*` is preffered if not even required.  
+This section is optional
 
 **FALLBACK Section:**  
-TBA
+This section is opional and it defines a fallback for files that are not accessible. ie. if you don't want to cache all large images for an offline use you can specify an offline placeholder image, or you can do something like a Google Chrome's offline dinosaur game for your website.  
+The first URI is a resource and the secon is fallback. Both of them must have the same origin as a manifest file itself.
 
 **Comments:**  
 TBA
