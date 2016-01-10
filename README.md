@@ -126,7 +126,9 @@ Manifest file itself is a very simple textual file that can have three sections 
 ```
 CACHE MANIFEST
 # v1 2016-01-10
-# Line above is just a simple comment, but it is a good practice to version your manifest file, see explanation bellow
+# Line above is just a simple comment,
+# but it is a good practice to version your manifest file,
+# see an explanation bellow
 example.html
 styles.css
 img/someimage.png
@@ -140,16 +142,16 @@ FALLBACK:
 /some-url offline.html
 ```
 
-**CACHE MANIFEST Section: **  
+**CACHE MANIFEST Section:**  
 TBA
 
-**NETWORK Section: **  
+**NETWORK Section:**  
 TBA
 
-**FALLBACK Section: **  
+**FALLBACK Section:**  
 TBA
 
-**Comments: **  
+**Comments:**  
 TBA
 
 
