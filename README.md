@@ -129,6 +129,9 @@ CACHE MANIFEST
 # Line above is just a simple comment,
 # but it is a good practice to version your manifest file,
 # see an explanation bellow
+
+# A list of files that needs to be cached
+CACHE:
 example.html
 styles.css
 img/someimage.png
@@ -143,7 +146,7 @@ FALLBACK:
 ```
 
 **CACHE Section:**  
-This is the default section. All files listed in this section (on the beggining of the file or immediatelly bellow "CACHE MANIFEST" title) will be cached as soon as they are downloaded for the first time. Those files will be served from cache until both cache manifest and the file are not updated.
+This is the default section. All files listed in this section or right below "CACHE MANIFEST" title will be cached as soon as they are downloaded for the first time. Those files will be served from cache until both cache manifest and the file are not updated.
 
 **NETWORK Section:**  
 Files listed in this section may come from the internet if they are not cached. If the file isn't cached in the CACHE section and isn't listed in this section it'll not be loaded even if user is online.  
@@ -155,9 +158,10 @@ This section is opional and it defines a fallback for files that are not accessi
 The first URI is a resource and the secon is fallback. Both of them must have the same origin as a manifest file itself.
 
 **Comments:**  
-TBA
+Each line that starts with `#` is a comment line and it's ignored by the cache.
+But since the files are not re-downloaded until the cache manifest file is not updated, it's a good practice to version of your manifest file in the comment or to add a timestamp.
 
-
+**Note:** Order of the sections is not important and they can be defined more than once.
 
 
 ### Browser support
