@@ -94,6 +94,8 @@ Source: [caniuse.com](http://caniuse.com/#feat=online-status); Date: 2015/12/26.
 ## Application cache
 [![Deprecated](https://img.shields.io/badge/Specs-DEPRECATED-red.svg?style=flat-square)](https://html.spec.whatwg.org/multipage/browsers.html#offline)
 
+[TODO: Add better introduction section]
+
 Beside online status, HTML5 introduced another, much more useful, resource for the real offline web apps - Application cache.
 
 Application Cache (AppCache) provides an interface to specify resources that browser should cache an make available in an offline mode, even if user refreshes the page. Beside all pitfalls and tricky parys, there's a few clear benefits that AppCache brought:
@@ -163,6 +165,11 @@ But since the files are not re-downloaded until the cache manifest file is not u
 
 **Note:** Order of the sections is not important and they can be defined more than once.
 
+### Updating the cache
+
+### Tricky parts
+
+### How and when to use it
 
 ### Browser support
 
