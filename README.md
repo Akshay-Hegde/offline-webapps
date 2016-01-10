@@ -104,6 +104,22 @@ Application Cache (AppCache) provides an interface to specify resources that bro
 
 AppCache is deprecated in favor of a new and more powerful [Service Workers](#service-workers), but until Service Workers gain better browser support you'll still need AppCache for cross-browser offline web apps.
 
+### Syntax
+
+To enable app cache for the app, you'll need to include manifest attribute in `<html>` tag. Manifest attribute must be included on each page you want to cache, and it can point to relative or absolute url within the same origin.
+
+Manifest file can have any extension as long as it is served with a correct mime-type - `text/cache-manifest`. This might require additional config on the server side.
+
+```html
+<!-- You can use relative url -->
+<html manifest="example.appcache">
+
+<!-- Or an absolute url with the same origin -->
+<html manifest="https://example.com/example.appcache">
+
+<!-- And any extension is supported if the file is served with the correct mimetype -->
+<html manifest="example.cache">
+``` 
 
 ### Browser support
 
