@@ -179,7 +179,10 @@ Source: [caniuse.com](http://caniuse.com/#feat=offline-apps); Date: 2015/12/26.
 ### More info
 
 - [Specs](https://html.spec.whatwg.org/multipage/browsers.html#offline)
+- [MDN: Using application cache](https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache)
+- [HTML5Rocks: A Beginner's Guide to Using the Application Cache](http://www.html5rocks.com/en/tutorials/appcache/beginner/)
 - [Appcache Facts](http://appcache.offline.technology)
+- [Application Cache is a Douchebag](http://alistapart.com/article/application-cache-is-a-douchebag)
 
 [[Back to top]](#offline-webapps)
 
