@@ -88,6 +88,7 @@ self.addEventListener('online', e => self.postMessage('online'), false)
 
 ### Demo
 
+- [HTML5Demos.com - Offline](http://html5demos.com/offline)
 
 ### Browser support
 
@@ -182,6 +183,10 @@ But since the files are not re-downloaded until the cache manifest file is not u
 
 ### How and when to use it
 
+### Demo
+
+- [Appcache Offline Technology Demo](http://appcache.offline.technology/demo/)
+
 ### Browser support
 
 ![](assets/browser-support/application-cache.png)
@@ -200,6 +205,10 @@ Source: [caniuse.com](http://caniuse.com/#feat=offline-apps); Date: 2015/12/26.
 ## Service workers
 [![Working draft](https://img.shields.io/badge/Specs-WD-yellow.svg?style=flat-square)](http://www.w3.org/TR/service-workers/)
 
+### Demo
+
+- [Offline news service](https://offline-news-service-worker.herokuapp.com)
+
 ### Browser support
 
 ![](assets/browser-support/service-workers.png)
@@ -217,6 +226,10 @@ Source: [caniuse.com](http://caniuse.com/#feat=serviceworkers); Date: 2015/12/26
 ## localStorage
 [![Recommendation](https://img.shields.io/badge/Specs-REC-green.svg?style=flat-square)](http://www.w3.org/TR/webstorage/)
 
+### Demo
+
+- [HTML5Demos.com - Storage](http://html5demos.com/storage)
+
 ### Browser support
 
 ![](assets/browser-support/localstorage.png)
@@ -231,6 +244,10 @@ Source: [caniuse.com](http://caniuse.com/#feat=namevalue-storage); Date: 2015/12
 ## WebSQL
 [![Deprecated](https://img.shields.io/badge/Specs-DEPRECATED-red.svg?style=flat-square)](http://www.w3.org/TR/webdatabase/)
 
+### Demo
+
+- [WebSQL vs. IdexedDB](http://ido-green.appspot.com/WebSQL-IndexedDB-example/main.html)
+
 ### Browser support
 
 ![](assets/browser-support/websql.png)
@@ -244,6 +261,11 @@ Source: [caniuse.com](http://caniuse.com/#feat=sql-storage); Date: 2015/12/26.
 
 ## IndexedDB
 [![Recommendation](https://img.shields.io/badge/Specs-REC-green.svg?style=flat-square)](http://www.w3.org/TR/IndexedDB/)
+
+### Demo
+
+- [Stickies](http://www.girliemac.com/stickies/)
+- [Web workers example](https://bl.ocks.org/nolanlawson/863e464f3025d7199a1f)
 
 ### Browser support
 
