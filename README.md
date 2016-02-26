@@ -205,6 +205,8 @@ Source: [caniuse.com](http://caniuse.com/#feat=offline-apps); Date: 2015/12/26.
 ## Service workers
 [![Working draft](https://img.shields.io/badge/Specs-WD-yellow.svg?style=flat-square)](http://www.w3.org/TR/service-workers/)
 
+Service workers essentially act as proxy servers that sit between web applications, and the browser and network (when available).
+
 ### Demo
 
 - [Offline news service](https://offline-news-service-worker.herokuapp.com)
@@ -225,6 +227,9 @@ Source: [caniuse.com](http://caniuse.com/#feat=serviceworkers); Date: 2015/12/26
 
 ## localStorage
 [![Recommendation](https://img.shields.io/badge/Specs-REC-green.svg?style=flat-square)](http://www.w3.org/TR/webstorage/)
+
+The localStorage property allows you to access a local Storage object.  
+localStorage is similar to sessionStorage. The only difference is that, while data stored inlocalStorage has no expiration time, data stored in sessionStorage gets cleared when the browsing session ends - that is, when the browser is closed.
 
 ### Demo
 
@@ -262,6 +267,8 @@ Source: [caniuse.com](http://caniuse.com/#feat=sql-storage); Date: 2015/12/26.
 ## IndexedDB
 [![Recommendation](https://img.shields.io/badge/Specs-REC-green.svg?style=flat-square)](http://www.w3.org/TR/IndexedDB/)
 
+IndexedDB is a low-level API for client-side storage of significant amounts of structured data, including files/blobs.
+
 ### Demo
 
 - [Stickies](http://www.girliemac.com/stickies/)
@@ -275,5 +282,7 @@ Source: [caniuse.com](http://caniuse.com/#feat=indexeddb); Date: 2015/12/26.
 ### More info
 
 - [Specs](http://www.w3.org/TR/IndexedDB/)
+- [MDC - IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
+- [HTML5Rocks - Migrating your WebSQL DB to IndexedDB](http://www.html5rocks.com/en/tutorials/webdatabase/websql-indexeddb/)
 
 [[Back to top]](#offline-webapps)
