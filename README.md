@@ -5,15 +5,26 @@ This document should cover basic of how to write offline web applications.
 ## TOC
 
 1. [Intro](#intro)
-2. [Online/Offline status](#onlineoffline-status)
-3. [Application cache](#application-cache)
-4. [Service Workers](#service-workers)
-5. [Storage](#storage)
-6. [localStorage](#localstorage)
-7. [WebSQL](#websql)
-8. [IndexedDB](#indexeddb)
+2. [Presentation](#presentation)
+3. [Online/Offline status](#onlineoffline-status)
+4. [Application cache](#application-cache)
+5. [Service Workers](#service-workers)
+6. [Storage](#storage)
+7. [localStorage](#localstorage)
+8. [WebSQL](#websql)
+9. [IndexedDB](#indexeddb)
 
 ## Intro
+
+## Presentation
+
+[Offline web apss presentation on slides.com.](http://slides.com/slobodan/offline-web-apps)
+
+<p align="center">
+  <a href="http://slides.com/slobodan/offline-web-apps" style="overflow: hidden; display: block; border: 2px solid #EEE">
+    <img height="331" width="600" src="assets/presentation.gif">
+  </a>
+</p>
 
 ## Online/Offline status
 [![Living standard](https://img.shields.io/badge/Specs-LS-brightgreen.svg?style=flat-square)](https://html.spec.whatwg.org/multipage/browsers.html#browser-state)
