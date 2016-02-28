@@ -205,7 +205,7 @@ Source: [caniuse.com](http://caniuse.com/#feat=offline-apps); Date: 2015/12/26.
 ## Service workers
 [![Working draft](https://img.shields.io/badge/Specs-WD-yellow.svg?style=flat-square)](http://www.w3.org/TR/service-workers/)
 
-Service workers essentially act as proxy servers that sit between web applications, and the browser and network (when available).
+Service worker is a script that is run in the background (separate tab) by the browser. It essentially acts as a proxy server that sits between web applications, the browser and network (when available).
 
 ### Demo
 
