@@ -207,6 +207,83 @@ Source: [caniuse.com](http://caniuse.com/#feat=offline-apps); Date: 2015/12/26.
 
 Service worker is a script that is run in the background (separate tab) by the browser. It essentially acts as a proxy server that sits between web applications, the browser and network (when available).
 
+### Syntax
+
+Basic cache example:
+
+```js
+const CACHE_NAME = 'offline-web-apps-cache-v1'
+const urlsToCache = [
+  '/',
+  '/scripts/main.js',
+  '/styles/main.css',
+]
+
+self.addEventListener('install', event =>
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => {
+        console.log(`Cache (${CACHE_NAME}) is opened`)
+        return cache.addAll(urlsToCache)
+      })
+  )
+)
+```
+
+Cache requests:
+
+```js
+self.addEventListener('fetch', event =>
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        // Cache hit - return response
+        if (response)
+          return response
+
+        return fetch(event.request)
+      })
+  )
+)
+```
+Updating service worker:
+
+```js
+this.addEventListener('install', event =>
+  event.waitUntil(
+    caches.open('offline-web-apps-cache-v2')
+      .then(cache =>
+        cache.addAll([
+          '/sw-test/',
+          '/sw-test/index.html',
+          '/sw-test/style.css',
+          '/sw-test/app.js',
+          '/sw-test/image-list.js'
+          // …
+          // include other new resources for the new version...
+        ])
+      )
+  )
+)
+```
+
+Deleting old cache:
+
+```js
+this.addEventListener('activate', event => {
+  const cacheWhitelist = ['offline-web-apps-cache-v2']
+
+  event.waitUntil(
+    caches.keys().then(keyList =>
+      Promise.all(keyList.map(key => {
+        if (cacheWhitelist.indexOf(key) === -1)
+          return caches.delete(key)
+      }))
+    )
+  )
+})
+```
+
 ### Demo
 
 - [Offline news service](https://offline-news-service-worker.herokuapp.com)
